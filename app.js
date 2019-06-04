@@ -1,17 +1,14 @@
 'use strict';
 
-const fs = require('fs');
-
-const alterFile = (file) => {
-  fs.readFile( file, (err, data) => {
-    if(err) { throw err; }
-    let text = data.toString().toUpperCase();
-    fs.writeFile( file, Buffer.from(text), (err, data) => {
-      if(err) { throw err; }
-      console.log(`${file} saved`);
-    });
-  });
-};
-
+const eventEmitter = require('./event-emitter.js');
+const eventNames = require('./event-names.js');
 let file = process.argv.slice(2).shift();
-alterFile(file);
+
+require('./actions/read.js');
+require('./actions/uppercase.js');
+require('./actions/write.js');
+require('./actions/error.js');
+require('./actions/logger.js');
+
+//trigger read file module
+eventEmitter.emit(eventNames.READ, file);
