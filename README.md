@@ -6,15 +6,9 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [travis](http://xyz.com)
-- [back-end](http://xyz.com) (when applicable)
-
-#### Documentation
-
-- [api docs](http://xyz.com) (API servers)
-- [jsdoc](http://xyz.com) (Server assignments)
-- [styleguide](http://xyz.com) (React assignments)
+- [submission PR](https://github.com/401-advanced-javascript-bw/lab-16-event-driven-app/pull/1)
+- [travis](https://www.travis-ci.com/401-advanced-javascript-bw/lab-16-event-driven-app)
+- [back-end](https://github.com/401-advanced-javascript-bw/lab-16-event-driven-app/tree/submission)
 
 ### Modules
 
